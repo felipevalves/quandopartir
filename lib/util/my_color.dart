@@ -7,6 +7,8 @@ class MyColor{
   static const String _primaryColorDark = 'e8e8e8';
   static const String _accentColor = '9B72FB';
 
+  static const String inputLogin = '959CA7';
+  static const String borderLogin = '3B5998';
   static const String facebookBlue = '3B5998';
 
   static const String gray = '303030';

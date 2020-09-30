@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  progress_dialog: ^1.1.0+1
+  fluttertoast: ^4.0.1
 
 
 

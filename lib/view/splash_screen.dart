@@ -1,7 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:quandopartir/util/my_color.dart';
-import 'package:quandopartir/view/login/login_page.dart';
+
+import 'start_page.dart';
 
 class SplashScreen extends StatelessWidget {
 
@@ -37,7 +38,7 @@ class SplashScreen extends StatelessWidget {
   Future<Widget> getPage(BuildContext context) async {
     await delay();
 
-    return LoginPage();
+    return StartPage();
   }
 
   Future<String> delay() async =>
