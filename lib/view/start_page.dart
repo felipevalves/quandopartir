@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quandopartir/generated/i18n.dart';
 import 'package:quandopartir/util/my_color.dart';
+import 'package:quandopartir/view/account/account_page.dart';
 
 import 'login/login_page.dart';
 
@@ -22,7 +24,7 @@ class StartPage extends StatelessWidget {
                   ),
                 ),
                 Container (
-                  child: Text('Bem Vindo', style: TextStyle(color: Colors.white),),
+                  child: Text(S.of(context).welcome, style: TextStyle(color: Colors.white),),
                 ),
                 ListTile(
                     title: _facebookButton()),
@@ -31,8 +33,8 @@ class StartPage extends StatelessWidget {
                 ListTile(
                     title: _quandoPartirButton(context)),
                 FlatButton(
-                  child: Text('Ainda não tem uma conta?', style: TextStyle(color: Colors.white,  fontSize: 10),),
-                  onPressed: (){print('Conta Pressed');},
+                  child: Text(S.of(context).dont_have_account, style: TextStyle(color: Colors.white,  fontSize: 10),),
+                  onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => AccountPage()));},
                 ),
               ],
             )
@@ -85,8 +87,8 @@ class StartPage extends StatelessWidget {
   }
 
   _quandoPartirButton(BuildContext context) {
-    return FlatButton(
-      child: Text('Login', style: TextStyle(color: Colors.white),),
+    return FlatButton (
+      child: Text(S.of(context).login, style: TextStyle(color: Colors.white),),
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.0),
           side: BorderSide(color: Colors.white)

@@ -23,6 +23,28 @@ class LoginPage extends StatelessWidget {
                 Container (
                   child: LoginForm(),
                 ),
+                Container (
+                  margin: EdgeInsets.only(top: 20.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Conectar com ', style: TextStyle(color: Colors.white)),
+                        GestureDetector(
+                          onTap: (){
+                            print('Conectar com Facebook');
+                          },
+                          child: Text('Facebook ', style: TextStyle(color: MyColor.color(MyColor.facebookBlue))),
+                        ),
+                        Text('ou ', style: TextStyle(color: Colors.white)),
+                        GestureDetector(
+                          onTap: (){
+                            print('Conectar com Google');
+                          },
+                          child: Text('Google', style: TextStyle(color: MyColor.color(MyColor.facebookBlue))),
+                        ),
+                      ],
+                    )
+                ),
               ],
             )
         )

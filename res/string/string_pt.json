@@ -1,0 +1,35 @@
+{
+  "dont_have_account": "Ainda não tem uma conta?",
+
+  "email":"E-mail",
+  "email_required":"E-mail é obrigatório",
+  "email_invalid":"E-mail é inválido",
+
+  "go":"Ir",
+  "go_back": "Voltar",
+
+  "hello":"Olá",
+  "http_login_err_404": "Erro ao conectar com o servidor",
+
+  "login": "Entrar",
+  "lastname":"Sobrenome",
+  "lastname_required":"Sobrenome é obrigatório",
+
+  "name":"Nome",
+  "name_required":"Nome é obrigatório",
+  "new_account": "Nova conta",
+
+
+  "password":"Senha",
+  "password_required":"Senha é obrigatório",
+  "password_forgot":"Esqueci minha senha",
+
+  "save": "Cadastrar",
+  "signup": "Criar conta",
+  "system_name": "T 30",
+
+  "title":"Hello world App",
+
+  "wait":"Aguarde...",
+  "welcome": "Bem Vindo"
+}

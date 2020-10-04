@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:quandopartir/generated/i18n.dart';
 import 'package:quandopartir/util/my_color.dart';
 import 'package:quandopartir/view/splash_screen.dart';
 
@@ -23,6 +25,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      localizationsDelegates: [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: S.delegate.supportedLocales,
+      locale: Locale('pt'),
       home: SplashScreen(),
     );
   }
